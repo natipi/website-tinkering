@@ -54,12 +54,42 @@
             <a style="padding-left:5px;padding-right:5px;padding-top:15px;padding-bottom:15px;">|</span>
             <a href="" class="nav-item">BLOG</a>
         </div> -->
+        <div style="position:fixed;float:left;width:10vw;left:2.5vw;top:50%;transform:translateY(-50%);z-index:10;">
+            <div class="side-nav-button"
+                id="home-button">
+                HOME
+            </div>
+            <div class="side-nav-button"
+            id="cv-button">
+                CV
+            </div>
+            <div class="side-nav-button"
+                id="writing-button">
+                WRITING
+            </div>
+            <div class="side-nav-button"
+                id="seminars-button">
+                SEMINARS
+            </div>
+            <div class="side-nav-button"
+                id="etc-button">
+                ETC
+            </div>
+            <div class="side-nav-button blog-button"
+                id="blog-button">
+                BLOG
+            </div>
+        </div>
         
-        <!-- <div class="" style="    background-image: linear-gradient(200deg, #8EC5FC 0%, #E0C3FC 33%, #ffdebd 66%, #cdffc5 100%);position:fixed;width:100vw;height:100vh;top:0;left:0;"> </div> -->
-        <!-- <div class="parallax-wrapper" style="position:fixed;float:right;top:0;right:0;width:85vw;background-color:rgba(255,255,255,0.5);box-shadow: rgba(0,0,0,0.1) 10px 10px 10px 10px;"> -->
+        <div style="position:fixed;float:right;top:0;right:0;width:85vw;background-color:rgba(255,255,255,0.5);box-shadow: rgba(0,0,0,0.1) 10px 10px 10px 10px;z-index:1;"> </div>
+        <!-- <div class="parallax-wrapper" style=""> -->
+        <!-- <div class="" style="background-image: linear-gradient(200deg, #8EC5FC 0%, #E0C3FC 33%, #ffdebd 66%, #cdffc5 100%);position:fixed;width:100vw;height:100vh;top:0;left:0;"> </div> -->
+
         <div class="parallax-wrapper">
-            <div class="background-gradient parallax-object"> </div>
-            <div class="max-width has-top-margin" style="width:85vw;">
+            <div class="background-gradient parallax-object" style="opacity: 1!important; z-index:-1;"> </div>
+
+            <div style="position:absolute;width:85vw;left:15vw;top:0;background-color:rgba(255,255,255,0.5);z-index:5;box-shadow: rgba(0, 0, 0, 0.1) 10px 10px 10px 10px; height:400vh;">
+                <div class="max-width has-top-margin">
                     <h1>Natalia Pacheco Tallaj</h1>
                     <div class="text-block" style="line-height:30px;">
                         I'm a second-year PhD student at MIT under the supervision of Søren Galatius and Mike Hopkins. 
@@ -183,25 +213,33 @@
                 <br><br>
 
                 <h1 id="etc">Etc</h1>
-                <div class="little-heading" style="">LINKS</div>
+                <div class="little-heading" style="">RESOURCES</div>
                 <div class="text-block-link pink-link" onclick="window.open('');" style="">
-                    Grad School Applications Guide
+                    Math Grad School Applications Guide
                 </div>
                 <div class="text-block-link pink-link" onclick="window.open('');" style="">
                     Notion Grad School Reading List Template
+                </div><br>
+                <div class="little-heading" style="">LINKS</div>
+                <div class="button-border-line">Math Blog</div>
+                <div class="button-border-line">Language Blog</div>
+                <div class="button-border-line">Github</div>
+                <div class="button-border-line">Email Me</div>
+                <!-- <div class="text-block-link pink-link" onclick="window.open('');" style="margin-top:-6px">
+                    Language Blog (original translations + learning resources in 🇨🇳🇮🇹🇪🇸🇧🇷🇯🇵)
                 </div>
                 <div class="text-block-link pink-link" onclick="window.open('');" style="">
                     Github
-                </div>
-                <div class="text-block-link pink-link" onclick="window.open('');" style="margin-top:-6px">
-                    Language Blog (original translations + learning resources in 🇨🇳🇮🇹🇪🇸🇧🇷🇯🇵)
-                </div><br>
-                <div class="little-heading" style="">WEB DEV</div>
-                <div class="little-heading" style="">CREDITS</div>
+                </div><br> -->
+                <div class="little-heading" style="">PORTFOLIO LINKS</div>
+                <div class="button-border-line">Web Development</div>
+                <div class="button-border-line">Art & Design</div>
+                <!-- <div class="little-heading" style="">CREDITS</div>
                 <div class="text-block" onclick="window.open('');" style="">
                     This website's design was inspired by the Amie super template, but the code + Notion integration was written by me and is independent of Super.
-                </div>
+                </div> -->
                 <!-- <div id="recent-posts" class="post-spotlight"></div> -->
+                </div>
             </div>
         </div>
     <script src="js/main.js"></script>
