@@ -7,6 +7,8 @@ const postContentEl = document.querySelector('#post-content')
 const postTitleEl = document.querySelector('#post-title')
 const postTocEl = document.querySelector('#toc')
 const relatedPostEl = document.querySelector('#related-posts')
+const loaderBackgroundEl = document.querySelector('#loader-background')
+const loaderIconEl = document.querySelector('#loader-icon')
 
 // get posts from backend
 const getPostsFromBackend = async () => {
@@ -362,6 +364,9 @@ const addPostContentToDom = async(postUrl) => {
     
     addTocToDom()
     addRelatedPostsToDom(taglist, postID)
+
+    loaderIconEl.style.opacity = 0
+    loaderBackgroundEl.classList.add('left-slide-pane')
 }
 
 const addPostTitleToDom = async(postUrl) => {

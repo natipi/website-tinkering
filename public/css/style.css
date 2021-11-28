@@ -694,4 +694,40 @@ a {
   color: white;
 }
 
+.loader {
+  margin: 0 0 2em;
+  height: 100px;
+  width: 20%;
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto 1em;
+  display: inline-block;
+  vertical-align: top;
+  transition: all 0.3s ease;
+}
+.loader svg path,
+.loader svg rect {
+  fill: #dd2393;
+}
+
+.left-slide-pane {
+  animation: slide-left-and-fade 0.5s ease;
+  opacity: 0;
+}
+
+@keyframes slide-left-and-fade {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-25vw);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-25vw);
+    opacity: 0;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
