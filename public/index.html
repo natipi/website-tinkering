@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="/css/style.css">
+
+        <!-- from my MIT adobe fonts acct: -->
+        <link rel="stylesheet" href="https://use.typekit.net/pha3oju.css"> 
+        <link rel="stylesheet" href="https://use.typekit.net/sgg5apx.css">
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function() {
+                $("#home-button").click(function() {
+                    $('.parallax-wrapper').animate({
+                            scrollTop: 0
+                        }, 400);
+                });
+                $("#cv-button").click(function() {
+                    console.log($("#CV").offset().top)
+                    $('.parallax-wrapper').animate({
+                        scrollTop: ($('.parallax-wrapper').scrollTop() + $("#CV").offset().top-100)
+                    },400);
+                });
+                $("#writing-button").click(function() {
+                    console.log($("#CV").offset().top)
+                    $('.parallax-wrapper').animate({
+                        scrollTop: ($('.parallax-wrapper').scrollTop() + $("#writing").offset().top-100)
+                    },400);
+                });
+                $("#seminars-button").click(function() {
+                    console.log($("#CV").offset().top)
+                    $('.parallax-wrapper').animate({
+                        scrollTop: ($('.parallax-wrapper').scrollTop() + $("#seminars").offset().top-100)
+                    },400);
+                });
+                $("#etc-button").click(function() {
+                    console.log($("#CV").offset().top)
+                    $('.parallax-wrapper').animate({
+                        scrollTop: ($('.parallax-wrapper').scrollTop() + $("#etc").offset().top-100)
+                    },400);
+                });
+            })
+        </script>
+    </head>
+    <body>
+        <div class="nav-bar">
+            <a class="nav-item" id="home-button">HOME</a>
+            <a class="nav-item" id="cv-button">CV</a>
+            <a class="nav-item" id="writing-button">WRITING</a>
+            <a class="nav-item" id="seminars-button">SEMINARS</a> 
+            <a class="nav-item" id="etc-button">ETC</a> 
+            <a style="padding-left:5px;padding-right:5px;padding-top:15px;padding-bottom:15px;">|</span>
+            <a href="" class="nav-item">BLOG</a>
+        </div>
+        
+        <!-- <div class="" style="    background-image: linear-gradient(200deg, #8EC5FC 0%, #E0C3FC 33%, #ffdebd 66%, #cdffc5 100%);position:fixed;width:100vw;height:100vh;top:0;left:0;"> </div> -->
+        <!-- <div class="parallax-wrapper" style="position:fixed;float:right;top:0;right:0;width:85vw;background-color:rgba(255,255,255,0.5);box-shadow: rgba(0,0,0,0.1) 10px 10px 10px 10px;"> -->
+        <div class="parallax-wrapper">
+            <div class="background-gradient parallax-object"> </div>
+            <!-- <div class="section-background" style="top:0;"> </div>
+            <div class="section-background" style="top:100vh;background-color:rgba(255, 172, 234, 0.5)"> </div>
+            <!-- top:calc(20px + 40px + 30vh); -->
+            <!-- <div class="max-width" style="display:table;top:0;height:100vh;">
+                <div style="display:table-cell;vertical-align: middle;">
+                    <h1>Natalia Pacheco Tallaj</h1>
+                    <div class="text-block" style="line-height:30px; ">
+                        I'm a second-year PhD student at MIT under the supervision of Søren Galatius and Mike Hopkins. 
+                        My interests lie somewhere between algebraic and geometric topology, and at times their applications to physics. 
+                    </div>
+                </div>
+            </div> -->
+            <div class="max-width has-top-margin" style="">
+                <!-- <div style="display:table-cell;vertical-align: middle;"> -->
+                    <h1>Natalia Pacheco Tallaj</h1>
+                    <div class="text-block" style="line-height:30px;">
+                        I'm a second-year PhD student at MIT under the supervision of Søren Galatius and Mike Hopkins. 
+                        My interests lie somewhere between algebraic and geometric topology, and at times their applications to physics. 
+                        Currently, I'm working on two projects related to K-theory and manifolds.
+                    </div>
+                    <br><br>
+                    <div class="little-heading" style="padding-bottom:30px;width:100%;text-align:center;">RECENT BLOG POSTS</div>
+                    <div id="recent-posts" class="post-spotlight"></div>
+                <!-- </div> -->
+                <br>
+                <div style="width:100%;padding-bottom:30px;" class="compound-title">
+                <div style="display: inline-block;">
+                    <h1 style="" id="CV">Résumé</h1>
+                </div>
+                <!-- <div style="display:inline-block;padding-left:20px;padding-right:20px;color:var(--gray-text-color);">PREVIEW OR DOWNLOAD</div> -->
+                <div style="display: inline-block;float:right;">
+                <div class="button-border">
+                    <span class="button-image"></span><span class="button-content" content="download full cv"></span>
+                </div>
+                <!-- <div class="button-border-line"> download full CV </div> -->
+                </div>
+                </div>
+
+                <div class="little-heading">EDUCATION</div>
+                <div class="text-block">
+                    PhD Student, Mathematics Dpt., MIT (2020-present)
+                </div>
+                <div class="text-block">
+                    Visiting PhD Student, Mathematics Dpt., Københavns U. (2021)
+                </div>
+                <div class="text-block">
+                    B.A. in Mathematics with honors, Harvard (2016-2020)
+                </div>
+
+                <br><br>
+
+                <div class="little-heading">AWARDS & FELLOWSHIPS</div>
+                <div class="text-block">
+                    Fullbright Scholar to Denmark (2020-2021)
+                </div>
+                <div class="text-block">
+                    MIT School of Science Fellowship (2020-2022)
+                </div>
+                <div class="text-block">
+                    NSF GRFP (2020-present)
+                </div>
+                <div class="text-block">
+                    AWM Alice T. Schafer Prize (2020)
+                </div>
+                <div class="text-block">
+                    Harvard Math Department Herb Alexander Prize(2020)
+                </div>  
+
+                <br><br>
+
+                <div class="little-heading">PAST PAPERS</div>
+                <div class="text-block">
+                    <span style="color:var(--blue-text-color);"><b>Turaev Hyperbolicity of Classical and Virtual Links</b></span>, JKTR* (2018)<br>
+                    <span style="color:var(--gray-text-color);">joint paper with O. Eisenberg, J. Greenberg, K. Kapoor, et. al.</span>
+                </div>
+                <div class="text-block">
+                    <span style="color:var(--blue-text-color);"><b>TG-Hyperbolicity of Virtual Links</b></span>, JKTR (2018)<br>
+                    <span style="color:var(--gray-text-color);">joint paper with O. Eisenberg, J. Greenberg, K. Kapoor, et. al.</span>
+                </div>
+                <div class="text-block">
+                    <span style="color:var(--blue-text-color);"><b>Thurston Norms of Tunnel-Number One Manifolds</b></span>, JKTR (2017)<br>
+                    <span style="color:var(--gray-text-color);">joint paper with K. Schreve and N. Vlamis</span>
+                </div>
+                <div class="text-block" style="font-size:12px; float:right;">
+                    *Journal of Knot Theory and its Ramifications
+                </div>
+
+                <!-- <br><br> -->
+
+                <!-- <div class="little-heading">SERVICE</div>
+                <div class="text-block">
+                    Weekly courses & reading for Puerto Rico Math Olympiad finalists (2020-2021)
+                </div>
+                <div class="text-block">
+                    MIT Directed Reading Program Mentor (2021)
+                </div>
+                <div class="text-block">
+                    Served in the International Jury for the Iberoamerican Math Olympiad (2020)
+                </div>
+                <div class="text-block">
+                    MIT GUMMI Mentor (2020)
+                </div> -->
+                <br><br><br><br>
+                <h1 id="writing">Writing</h1>
+                <div class="little-heading" style="">NOTES/SLIDES FROM MY LEARNING SEMINAR TALKS</div>
+                <div class="text-block-link pink-link" onclick="window.open('');" style="">
+                    eCHT Seminar F21: The Atiyah-Segal Completion Theorem
+                </div>
+                <div class="text-block-link pink-link" onclick="window.open('');" style="">
+                    Thursday Seminar F21: Surgery Theory for Poincare ∞-Categories
+                </div>
+                <div class="text-block-link pink-link" onclick="window.open('');" style="">
+                    Juvitop Seminar F21: The BV formalism via L∞-Algebras
+                </div>
+                <div class="text-block-link pink-link" onclick="window.open('');" style="">
+                    Stanford Baby Colloquium S21: K Theory in 3 Flavors
+                </div>
+                <div class="text-block-link pink-link" onclick="window.open('');" style="">
+                    Thursday Seminar S21: THH and TC
+                </div>
+                <div class="text-block-link pink-link" onclick="window.open('');" style="">
+                    Juvitop S21: The Galois Action on Symplectic K-Theory
+                </div>
+                <div class="text-block-link pink-link" onclick="window.open('');" style="">
+                    Juvitop F20: The Homotopy Type of the Bordism Category
+                </div>
+                <br>
+                <div class="little-heading" style="">OTHERS</div>
+                <div class="text-block-link pink-link" onclick="window.open('');" style="">
+                    Math Blog
+                </div>
+                <div class="text-block-link pink-link" onclick="window.open('');" style="">
+                    G2 Notes
+                </div>
+
+                <br><br><br>
+
+                <h1 id="seminars">Seminars</h1>
+                <div class="little-heading" style="">SEMINARS I(VE) ORGANIZE(D)</div>
+                <div class="text-block-link" onclick="window.open('https://math.mit.edu/juvitop/');" style="">
+                    <span style="color:var(--pink-text-color);font-weight:bold;">Juvitop: Factorization Algebras in Quantum Field Theory</span> (Ongoing)<br>
+                    <span style="color:var(--gray-text-color);">with Araminta Amabel</span> 
+                </div>
+                <div class="text-block-link" onclick="window.open('https://math.mit.edu/pumagrass/');" style="">
+                    <span style="color:var(--pink-text-color);font-weight:bold;">PuMaGraSS</span> (2021-2022) <br>
+                    <span style="color:var(--gray-text-color);">with Cam Krulewski, Mary Stelow, Marisa Gaetz</span>
+                </div>
+                <div class="text-block-link" onclick="window.open('https://math.mit.edu/juvitop/pastseminars/2021_Spring.html');" style="">
+                    <span style="color:var(--pink-text-color);font-weight:bold;">Juvitop: Galois Action on Symplectic K-theory</span> (2021) <br>
+                    <span style="color:var(--gray-text-color);">with Araminta Amabel and Lucy Yang</span>
+                </div>
+                <br><br>
+
+                <h1 id="etc">Etc</h1>
+                <div class="little-heading" style="">LINKS</div>
+                <div class="text-block-link pink-link" onclick="window.open('');" style="">
+                    Grad School Applications Guide
+                </div>
+                <div class="text-block-link pink-link" onclick="window.open('');" style="">
+                    Notion Grad School Reading List Template
+                </div>
+                <div class="text-block-link pink-link" onclick="window.open('');" style="">
+                    Github
+                </div>
+                <div class="text-block-link pink-link" onclick="window.open('');" style="margin-top:-6px">
+                    Language Blog (original translations + learning resources in 🇨🇳🇮🇹🇪🇸🇧🇷🇯🇵)
+                </div><br>
+                <div class="little-heading" style="">WEB DEV</div>
+                <div class="little-heading" style="">CREDITS</div>
+                <div class="text-block" onclick="window.open('');" style="">
+                    This website's design was inspired by the Amie super template, but the code + Notion integration was written by me and is independent of Super.
+                </div>
+                <!-- <div id="recent-posts" class="post-spotlight"></div> -->
+            </div>
+        </div>
+    <script src="js/main.js"></script>
+    <script>
+        addRecentPostsToDom()
+    </script>
+    </body>
+</html>
+
+<!-- mathElements = body.querySelectorAll('[class*="math-el"]');
+
+for (let element of mathElements) {
+    katex.render(element.attr(content), element, {
+        throwOnError: false,
+        macros
+    };
+} -->
