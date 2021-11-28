@@ -233,6 +233,11 @@ const addPostContentInnerHtml = function(postcontent) {
                 \\(${block.equation.expression}\\)
             `
         }
+        if (block.type == "image") {
+            first_nonempty_passed = true 
+            console.log(block.image.file.url)
+            div.innerHTML = `<img src="${block.image.file.url}" style="width:100%" style=""><br><br>`
+        }
         if (block.type == "heading_1") {
             first_nonempty_passed = true
             var divContent = `<h1 style="padding-top:40px;font-size:36px;padding-bottom:0px;margin-bottom:15px;">`

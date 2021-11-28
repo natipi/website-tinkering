@@ -729,7 +729,7 @@ a {
 	
 	&:hover {
 		width:200px;
-		// background-color:#F6F6F6;	
+		background-color:#F6F6F6;	
 		.button-content:after {
 			content:attr(content);
 		}

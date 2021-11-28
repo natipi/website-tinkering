@@ -639,10 +639,10 @@ a {
   width: 64px;
   word-break: break-word;
   transform: scale(0.7);
-  transform-origin: 50% 50%;
 }
 .button-border:hover {
   width: 200px;
+  background-color: #F6F6F6;
 }
 .button-border:hover .button-content:after {
   content: attr(content);
