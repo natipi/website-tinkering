@@ -367,6 +367,8 @@ const addPostContentToDom = async(postUrl) => {
 
     loaderIconEl.style.opacity = 0
     loaderBackgroundEl.classList.add('left-slide-pane')
+    // https://stackoverflow.com/questions/39198083/remove-hide-div-from-dom-after-animation-completes-using-css
+    $('.left-slide-pane').bind('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function(e) { $(this).remove(); });
 }
 
 const addPostTitleToDom = async(postUrl) => {
