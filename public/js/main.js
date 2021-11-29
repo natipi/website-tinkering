@@ -101,7 +101,7 @@ const addRelatedPostsToDom = async (currentPostTags, currentPostId) => {
                 div.className = 'post-card'
                 div.id = post.title
                 div.innerHTML = `
-                    <a href="/blog-post/${post.title}/${post.id}">
+                    <a href="/blog-post/${post.title}/${post.id}" style="">
                     <div class="post-card-thumb-container"><div style="background-image:url('${post.image}')" class="post-card-thumb"></div></div>
                     <div class="break"></div>
                     <div class="post-card-content">

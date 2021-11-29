@@ -291,6 +291,7 @@ a {
   -webkit-transform: scale(1.2) !important;
   -o-transform: scale(1.2) !important;
   transform: scale(1.2) !important;
+  transform-origin: 50% 50%;
 }
 
 .post-card-thumb-container {
@@ -482,6 +483,7 @@ a {
   background-color: rgba(163, 177, 255, 0.65);
   /* Tint color */
   background-blend-mode: multiply;
+  transform-origin: 50% 50%;
   margin-bottom: 10px;
 }
 .post-spotlight-one-col .post-card-content {
@@ -511,7 +513,7 @@ a {
 }
 .post-spotlight-one-col .post-card-thumb {
   will-change: transform;
-  transform-origin: 100% 50%;
+  transform-origin: 50% 50%;
   transition: transform 0.25s cubic-bezier(0.49, 0.14, 0.58, 0.86);
 }
 .post-spotlight-one-col a:hover .post-card-thumb {
