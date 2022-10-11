@@ -18,34 +18,22 @@
 }
 
 body{
-    /* background: radial-gradient(30% 55.51% at 50% 70%, #FFD3C7 0%, rgba(255, 211, 200, 0.04) 100%),
-                radial-gradient(30% 80% at 94% 96%, rgba(0, 255, 255, 0.3) 0%, rgba(230, 245, 255, 0) 70%),
-                radial-gradient(44% 80% at 4% 94%, rgba(107, 110, 154, 0.8) 0%, rgba(225, 225, 234, 0) 100%), #FFFFFF; */
-    // font-family: quiche-sans, sans-serif;
     font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
     font-weight: 100;
     align-content:center;align-items:center;
     margin:0;
     padding:0;
-    overflow: hidden;
-
-    // background-image: linear-gradient(200deg, #8EC5FC 0%, #E0C3FC 33%, #ffdebd 66%, #cdffc5 100%);
+    overflow: scroll;
 }
 
 h1, h2, h3 {
-    /* font-weight:100; */
     font-weight: 300;
 }
 
 h1 {
     margin: auto;
-    /* margin-top: 100px !important; */
     font-size: 34px;
     font-family: 'ny', serif;
-    // font-family: rollerscript-rough, sans-serif;
-    // font-style: normal;
-    // font-weight: 400;
-    /* text-align:center; */
     margin-bottom:30px;
 }
 
@@ -68,21 +56,6 @@ a {
     margin-bottom:0;
 }
 
-.parallax-wrapper {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective: 1px;
-}
-
-.parallax-object {
-    // --scale: calc(1)
-    // transform-style: preserve-3d;
-    
-    // position:absolute;
-}
 
 .background-gradient {
     content: '';
@@ -90,14 +63,12 @@ a {
     min-height: 100vh;
     width: 25vw; //25
     background-color: white;
-    // before: 200deg, blue
     background-image: linear-gradient(200deg, #8EC5FC 0%, #E0C3FC 33%, #ffdebd 66%, #cdffc5 100%);
     opacity: 0.3; //0.2
     transform: translateZ(-1px) scale(8) translateY(37.5vh); // scale 8, Y 37.5
     z-index:-2;
     margin-left: auto;
     margin-right: auto;
-    // border: 10px solid red;
 }
 .section-background {
     content: '';
@@ -155,30 +126,20 @@ a {
     top: 15vh;
 }
 .has-small-top-margin{
-    // top:calc(100px);
-    // top:10vh;
-    // top: 50vh;
-    // top:30px;
-
-    // so that the one-column blog post spotlight ends up vertically centered
-    // height of post spotlight: little heading 12px + 15px, 35vh post-card, 30px margin-bottom for the first, 10px padding-bottom on post-spotlight
-    top: calc((100vh - (12px + 15px + 35vh + 30px + 35vh + 10px)) / 2);
+top: calc((100vh - (12px + 15px + 35vh + 30px + 35vh + 10px)) / 2);
 }
 .max-width {
     position: absolute;
     width: 50vw;
     max-width: 600px;
-    // max-width:40vw;
     min-width: 400px;
     left: 50%;
-    // top: calc(20px + 40px + 20vh); // replace 40px by height of nav bar
     min-height:100vh;
     transform: translateX(-50%) ;
 }
 
 .max-width h1 {
     font-size: 50px;
-    // padding-bottom:10px;
 }
 
 
