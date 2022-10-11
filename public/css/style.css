@@ -31,7 +31,6 @@ h1, h2, h3 {
 h1 {
   margin: auto;
   font-size: 34px;
-  font-family: "ny", serif;
   margin-bottom: 30px;
 }
 
@@ -507,6 +506,67 @@ a {
   -webkit-transform: scale(1.2) !important;
   -o-transform: scale(1.2) !important;
   transform: scale(1.2) !important;
+}
+
+.post-spotlight-text-based {
+  position: relative;
+  width: 100%;
+  display: flex;
+  padding: 0;
+  padding-bottom: 10px;
+}
+.post-spotlight-text-based .post-card {
+  padding: 0;
+  max-width: calc(50% - 20px);
+  display: block;
+  overflow: auto;
+  height: auto !important;
+  border-radius: 8px;
+}
+.post-spotlight-text-based .post-card:first-of-type {
+  margin-right: 30px;
+}
+.post-spotlight-text-based .post-card::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: calc(50% - 20px);
+  border-radius: 8px;
+  height: 100%;
+  background: #ccccffc4;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.post-spotlight-text-based .post-card:hover::before {
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+.post-spotlight-text-based .post-card-thumb-container {
+  display: none;
+}
+.post-spotlight-text-based .post-card-content {
+  width: 100%;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+.post-spotlight-text-based .post-card-title {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  width: calc(100% - 40px);
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: var(--font-fam);
+}
+.post-spotlight-text-based .post-card-tags-container {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.post-spotlight-text-based .break {
+  display: none;
 }
 
 .gradient-ball {

@@ -43,7 +43,6 @@ const addPostsToDom = async () => {
             </div>
             </a>
         `
-        // console.log(div.innerHTML)
         postsEl.appendChild(div)
     });
 
