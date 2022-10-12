@@ -281,15 +281,9 @@ top: calc((100vh - (12px + 15px + 35vh + 30px + 35vh + 10px)) / 2);
     background-color:gray;
 }
 
-.post-card {
-    display:flex;
-    margin-bottom:3.1vw;
-    /* padding-left: 1vw; */
-    padding-right:1vw;
-    /* background-color:gray; */
-    min-height:150px;
-    height:150px;
-}
+// .post-card {
+
+// }
 
 .post-card:hover .post-card-thumb {
     -ms-transform: scale(1.2) !important;
@@ -399,6 +393,14 @@ top: calc((100vh - (12px + 15px + 35vh + 30px + 35vh + 10px)) / 2);
     overflow:hidden;
     padding-bottom: 10px;
     .post-card {
+        display:flex;
+        margin-bottom:3.1vw;
+        /* padding-left: 1vw; */
+        padding-right:1vw;
+        /* background-color:gray; */
+        min-height:150px;
+        height:150px; 
+
         padding:0;
         max-width:calc(50% - 20px);
         display:flex;
@@ -470,6 +472,14 @@ top: calc((100vh - (12px + 15px + 35vh + 30px + 35vh + 10px)) / 2);
     overflow:hidden;
     padding-bottom: 10px;
     .post-card {
+        display:flex;
+        margin-bottom:3.1vw;
+        /* padding-left: 1vw; */
+        padding-right:1vw;
+        /* background-color:gray; */
+        min-height:150px;
+        height:150px; 
+
         padding:0;
         max-width:calc(60% - 20px);
         margin-left:50%;
@@ -579,7 +589,7 @@ top: calc((100vh - (12px + 15px + 35vh + 30px + 35vh + 10px)) / 2);
             width: calc(50% - 20px);
             border-radius: 8px;
             height: 100%;
-            background: #ccccffc4;
+            border: 1px solid #ccccffc4;
             opacity: 0;
             transition: opacity 1s ease;
         }
@@ -587,6 +597,13 @@ top: calc((100vh - (12px + 15px + 35vh + 30px + 35vh + 10px)) / 2);
             opacity: 1;
             transition: opacity 1s ease;
         }
+        .post-card-tag {
+            border-radius: 2px;
+        }
+        // &:hover .post-card-tag {
+        //     background-color: white;
+        //     transition: background-color 1s ease;
+        // }
     }
     .post-card-thumb-container {
         display: none;
@@ -613,7 +630,7 @@ top: calc((100vh - (12px + 15px + 35vh + 30px + 35vh + 10px)) / 2);
     .post-card-tags-container {
         margin-left: 20px;
         margin-right: 20px;
-        margin-bottom: 10px;
+        // margin-bottom: 10px;
     }
     .break {
         display: none;
