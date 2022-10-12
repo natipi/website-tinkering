@@ -10,43 +10,11 @@
 
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-        <script>
-            $(document).ready(function() {
-                $("#home-button").click(function() {
-                    $('.parallax-wrapper').animate({
-                            scrollTop: 0
-                        }, 400);
-                });
-                $("#cv-button").click(function() {
-                    console.log($("#CV").offset().top)
-                    $('.parallax-wrapper').animate({
-                        scrollTop: ($('.parallax-wrapper').scrollTop() + $("#CV").offset().top-100)
-                    },400);
-                });
-                $("#writing-button").click(function() {
-                    console.log($("#CV").offset().top)
-                    $('.parallax-wrapper').animate({
-                        scrollTop: ($('.parallax-wrapper').scrollTop() + $("#writing").offset().top-100)
-                    },400);
-                });
-                $("#seminars-button").click(function() {
-                    console.log($("#CV").offset().top)
-                    $('.parallax-wrapper').animate({
-                        scrollTop: ($('.parallax-wrapper').scrollTop() + $("#seminars").offset().top-100)
-                    },400);
-                });
-                $("#etc-button").click(function() {
-                    console.log($("#CV").offset().top)
-                    $('.parallax-wrapper').animate({
-                        scrollTop: ($('.parallax-wrapper').scrollTop() + $("#etc").offset().top-100)
-                    },400);
-                });
-            })
-        </script>
     </head>
     <body>
        
         <div class="max-width has-top-margin">
+            <img src="images/nat-lineart.png">
             <h1>Natalia Pacheco Tallaj</h1>
             <div class="text-block" style="line-height:30px;">
                 I'm a third-year PhD student at MIT under the supervision of Søren Galatius and Mike Hopkins. 
@@ -101,7 +69,8 @@
 
         <br><br> -->
 
-        <div class="little-heading">PAST PAPERS</div>
+        <br>
+        <div class="little-heading" style="padding-bottom:30px;width:100%;text-align:center;">PAST PAPERS</div>
         <div class="text-block">
             <span style="color:var(--blue-text-color);"><b>Turaev Hyperbolicity of Classical and Virtual Knots</b></span>, AGT* (2021)<br>
             <span style="color:var(--gray-text-color);">joint paper with O. Eisenberg, J. Greenberg, K. Kapoor, et. al.</span>
@@ -128,19 +97,27 @@
             and I have served as delegation leader for the Puerto Rican team to the IberoAmerican Math Olympiad and the IMO.
         </div>
         
-        <br><br><br><br>
+        <br><br>
         <h1 id="seminars">organizing</h1>
         <div class="little-heading" style="">CONFERENCES</div>
-        In Summer of 2022, I co-organized the NSF-funded conference Algebraic Structures in Topology in San Juan, PR, along with Manuel Rivera and Jeremy Miller.
+        <div class="text-block" style="line-height:30px;">
+            In Summer of 2022, I co-organized the NSF-funded conference Algebraic Structures in Topology in San Juan, PR, 
+            along with Manuel Rivera and Jeremy Miller.<br>
 
-        In undergrad, I organized the Women in Math and Statistics conference at Harvard.
+            In undergrad, I organized the Women in Math and Statistics conference at Harvard.
+        </div>
+        <br>
         <div class="little-heading" style="">SEMINARS I(VE) ORGANIZE(D)</div>
         <div class="text-block-link" onclick="window.open('https://math.mit.edu/juvitop/');" style="">
-            <span style="color:var(--pink-text-color);font-weight:bold;">Juvitop: Spectral Lie Algebras</span> (Upcoming S2022)<br>
+            <span style="color:var(--pink-text-color);font-weight:bold;">Juvitop: Chromatic Nullstellensatz</span> (F2022)<br>
+            <span style="color:var(--gray-text-color);">with Ishan Levy and Adela Zhang</span> 
+        </div>
+        <div class="text-block-link" onclick="window.open('https://math.mit.edu/juvitop/');" style="">
+            <span style="color:var(--pink-text-color);font-weight:bold;">Juvitop: Goodwillie Calculus and Spectral Lie Algebras</span> (S2022)<br>
             <span style="color:var(--gray-text-color);">with Adela Zhang</span> 
         </div>
         <div class="text-block-link" onclick="window.open('https://math.mit.edu/juvitop/');" style="">
-            <span style="color:var(--pink-text-color);font-weight:bold;">Juvitop: Factorization Algebras in Quantum Field Theory</span> (Ongoing F2021)<br>
+            <span style="color:var(--pink-text-color);font-weight:bold;">Juvitop: Factorization Algebras in Quantum Field Theory</span> (F2021)<br>
             <span style="color:var(--gray-text-color);">with Araminta Amabel</span> 
         </div>
         <div class="text-block-link" onclick="window.open('https://math.mit.edu/pumagrass/');" style="">
@@ -151,11 +128,11 @@
             <span style="color:var(--pink-text-color);font-weight:bold;">Juvitop: Galois Action on Symplectic K-theory</span> (S2021) <br>
             <span style="color:var(--gray-text-color);">with Araminta Amabel and Lucy Yang</span>
         </div>
-        <br><br>
+        <br>
 
-        <br><br><br><br>
-        <h1 id="writing">writing</h1>
-        <div class="text-block">
+        <br><br>
+        <h1 id="writing">expository writing</h1>
+        <div class="text-block" style="line-height:30px;">
             Hopefully some of this is useful to other grad students trying to learn similar stuff :) or people from my seminars who want to review.
             There are some redundancies in content between these and my blog posts.
         </div><br>
@@ -200,9 +177,9 @@
             G2 Notes (Github Repo)
         </div>
 
-        <br><br><br>
+        <br><br>
 
-        <h1 id="etc">Etc</h1>
+        <h1 id="etc">etc</h1>
         <div class="little-heading" style="">RESOURCES</div>
         <div class="text-block-link pink-link" onclick="window.open('');" style="">
             Math Grad School Applications Guide
@@ -229,6 +206,7 @@
             This website's design was inspired by the Amie super template, but the code + Notion integration was written by me and is independent of Super.
         </div> -->
         <!-- <div id="recent-posts" class="post-spotlight"></div> -->
+        <br><br><br><br><br><br>
 
     <script src="js/main.js"></script>
     <script>
